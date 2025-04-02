@@ -17,7 +17,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ChakraProvider>
             <div
-            className={`flex flex-col h-full md:p-8 ${firaSans.variable}`}
+            className={`flex flex-col min-h-full md:p-12 ${firaSans.variable}`}
             style={{ background: 'rgb(38, 38, 41)' }}
             >
                 <ToastContainer />
