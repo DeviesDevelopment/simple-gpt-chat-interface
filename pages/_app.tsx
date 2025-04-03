@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
 import { ChakraProvider } from "@chakra-ui/react";
 import { ToastContainer } from "react-toastify";
-import './globals.css'
+import '../styles/globals.css'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { Fira_Sans } from 'next/font/google'
