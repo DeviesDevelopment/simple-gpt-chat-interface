@@ -26,7 +26,8 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
           <CardHeader justifyContent={"center"}>
             <Heading
               fontSize="lg"
-              fontWeight={"medium"}
+              fontFamily="'Fira Sans', sans-serif"
+              fontWeight={"500"}
               mb={1}
               color={"gray.200"}
               textAlign={"center"}
@@ -47,7 +48,8 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
           <CardHeader justifyContent={"center"}>
             <Heading
               fontSize="lg"
-              fontWeight={"medium"}
+              fontWeight={"500"}
+              fontFamily="'Fira Sans', sans-serif"
               mb={1}
               color={"gray.200"}
               textAlign={"center"}
@@ -69,7 +71,8 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
           <CardHeader justifyContent={"center"}>
             <Heading
               fontSize="lg"
-              fontWeight={"medium"}
+              fontWeight={"500"}
+              fontFamily="'Fira Sans', sans-serif"
               mb={1}
               color={"gray.200"}
               textAlign={"center"}
@@ -90,7 +93,8 @@ export function EmptyState(props: { onChoice: (question: string) => any }) {
           <CardHeader justifyContent={"center"}>
             <Heading
               fontSize="lg"
-              fontWeight={"medium"}
+              fontWeight={"500"}
+              fontFamily="'Fira Sans', sans-serif"
               mb={1}
               color={"gray.200"}
               textAlign={"center"}

@@ -214,6 +214,7 @@ export function ChatWindow(props: { conversationId: string }) {
       >
         <Heading
           fontSize={messages.length > 0 ? "2xl" : "3xl"}
+          fontFamily="'Fira Sans', sans-serif"
           fontWeight={"700"}
           mb={1}
           color={"white"}
@@ -221,19 +222,20 @@ export function ChatWindow(props: { conversationId: string }) {
           Devies Bot
         </Heading>
         {messages.length > 0 ? (
-          <Heading fontSize="md" fontWeight={"normal"} mb={1} color={"white"}>
+          <Heading fontSize="md" fontFamily="'Fira Sans', sans-serif" fontWeight={"normal"} mb={1} color={"white"}>
             We appreciate feedback!
           </Heading>
         ) : (
           <Heading
             fontSize="xl"
+            fontFamily="'Fira Sans', sans-serif"
             fontWeight={"normal"}
             color={"white"}
             marginTop={"10px"}
             textAlign={"center"}
           >
             Ask me anything about{" "}
-            <Link href="https://devies.se/" color={"blue.200"}>
+            <Link href="https://devies.se/" target="_blank" color={"blue.200"}>
               Devies
             </Link>
           </Heading>
@@ -259,7 +261,7 @@ export function ChatWindow(props: { conversationId: string }) {
               <ChatMessageBubble
                 key={m.id}
                 message={{ ...m }}
-                aiEmoji="🦜"
+                aiEmoji="🤖"
                 isMostRecent={index === 0}
                 messageCompleted={!isLoading}
               ></ChatMessageBubble>
