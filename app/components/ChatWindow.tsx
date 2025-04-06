@@ -28,11 +28,7 @@ import { Source } from "./SourceBubble";
 import { apiBaseUrl } from "../utils/constants";
 
 const MODEL_TYPES = [
-  "gpt_4o",
-  "anthropic_claude_3_haiku",
-  "google_gemini_pro",
-  "fireworks_mixtral",
-  "cohere_command",
+  "gpt_4o"
 ];
 
 const defaultLlmValue =
