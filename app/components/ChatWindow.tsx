@@ -132,9 +132,12 @@ export function ChatWindow(props: { conversationId: string }) {
             streamedResponse?.logs?.[sourceStepName]?.final_output?.output,
           )
         ) {
+
           sources = streamedResponse.logs[
             sourceStepName
-          ].final_output.output.map((doc: Record<string, any>) => ({
+          ].final_output.output
+          .filter((doc: Record<string, any>) => !doc.metadata.source.includes('.txt'))
+          .map((doc: Record<string, any>) => ({
             url: doc.metadata.source,
             title: doc.metadata.title,
           }));
@@ -202,7 +205,7 @@ export function ChatWindow(props: { conversationId: string }) {
   };
 
   return (
-    <div className="flex flex-col items-center p-8 rounded grow max-h-full">
+    <div className="flex flex-col items-center p-4 rounded grow max-h-full">
       <Flex
         direction={"column"}
         alignItems={"center"}
