@@ -220,11 +220,6 @@ export function ChatWindow(props: { conversationId: string }) {
         >
           Devies Bot
         </Heading>
-        {messages.length > 0 ? (
-          <Heading fontSize="md" fontFamily="'Fira Sans', sans-serif" fontWeight={"normal"} mb={1} color={"white"}>
-            We appreciate feedback!
-          </Heading>
-        ) : (
           <Heading
             fontSize="xl"
             fontFamily="'Fira Sans', sans-serif"
@@ -238,7 +233,6 @@ export function ChatWindow(props: { conversationId: string }) {
               Devies
             </Link>
           </Heading>
-        )}
         <div className="text-white flex flex-wrap items-center mt-4">
           <div className="flex items-center">
             {llmIsLoading ? (
